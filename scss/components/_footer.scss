@@ -1,0 +1,61 @@
+@use "colors";
+footer {
+    background-color: colors.$colorFooter;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    color: colors.$colorFooterText;
+    >div {
+        min-width: 250px;
+        width: 100%;
+        text-align: center;
+        margin: 20px 10px 10px;
+        >h2 {
+            color: colors.$colorSpanTitle;
+        }
+        >p {
+            margin: 8px;
+        }
+        >a {
+            color: colors.$colorFooterText;
+            font-size: 10px;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    footer {
+        overflow: hidden;
+        display: grid;
+        text-align: center;
+        grid-template-columns: 33% 25% 33%;
+        grid-template-areas: "email int dir";
+        padding: 40px 0;
+        .integrantes {
+            grid-area: int;
+        }
+        .email {
+            grid-area: email;
+        }
+        .dir {
+            grid-area: dir;
+        }
+        .map {
+            grid-area: map;
+        }
+    }
+}
+
+@media only screen and (max-width:350px) {
+    footer {
+        >div {
+            >p {
+                font-size: 13px;
+            }
+        }
+    }
+}

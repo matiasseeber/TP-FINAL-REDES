@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    flex-shrink: 0
+}
+
+body>main>section>.containerSlider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: none
+}
+
+body>main>section>.containerSlider ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative
+}
+
+body>main>section>.containerSlider ul>li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    transition: 1s
+}
+
+body>main>section>.containerSlider ul>li>* {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>main>section>.containerSlider ul>li>*>p {
+    width: 70%;
+    text-align: center;
+}
+
+body>main>section>.containerSlider ul>li>div>img {
+    width: 50%;
+    text-align: center;
+}
+
+body>main>section>.containerSlider>div {
+    font-size: 50px;
+    transition: .5s;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: absolute;
+    top: 35%;
+    z-index: 10000
+}
+
+body>main>section>.containerSlider>div:hover {
+    background-color: #c5c5c5
+}
+
+body>main>section>.containerSlider>#nextSlide {
+    right: 0
+}
+
+/*# sourceMappingURL=style.css.map */
