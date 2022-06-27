@@ -9,6 +9,7 @@
     outline: none;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    scroll-margin-top: 75px;
 }
 
 h1,
@@ -29,6 +30,23 @@ body{
     >main{
         >section{
             height: calc(100vh - 75px);
+        }
+        >#servicios{
+            height:auto;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            ul{
+                width: 60%;
+                li{
+                    padding: 10px;
+                    font-size: 30px;
+                    list-style: circle;
+                    font-weight: bold;
+                }
+            }
         }
         h1{
             font-size: 50px;
